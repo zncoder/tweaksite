@@ -1,0 +1,17 @@
+{
+  "name": "tweaksite",
+  "version": "1.2.2",
+  "manifest_version": 2,
+  "description": "Tweak Site",
+  "icons": {"48": "icons/48.png"},
+  "content_scripts": [
+    {
+      "matches": [
+		"https://www.haituu.tv/*",
+		"https://www.nytimes.com/*",
+		"https://archive.ph/*"
+	  ],
+      "js": ["page.js"]
+    }
+  ]
+}
